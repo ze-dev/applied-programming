@@ -1,6 +1,6 @@
 def maketxt(filename):
     '''Создает текстовый файл в директории запуска скрипта.
-    В консоли вызывать maketxt.py НужноеИмя (имя без пробелов)'''
+    В консоли вызывать maketxt.py НужноеИмяФайла (БЕЗ пробелов)'''
     import time, os
     with open('%s.txt' % filename, 'w') as ff:
         dirPath=os.getcwd()
