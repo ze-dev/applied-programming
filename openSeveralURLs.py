@@ -1,3 +1,7 @@
+'''Использовал для открытия сразу 20 разных url-ссылок,
+когда размещал объявления в разных группах VK и авито.
+Читает все из одного текстового файла в той же папке.'''
+
 import webbrowser, time
 
 with open('речь и размещение.txt','r') as stream:
@@ -10,6 +14,6 @@ for line in lines:
 
 for url in url_list:
     webbrowser.open_new_tab(url)
-    time.sleep(2)
+    time.sleep(3)
 
 input('Done..')
