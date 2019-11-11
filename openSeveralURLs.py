@@ -1,0 +1,15 @@
+import webbrowser, time
+
+with open('речь и размещение.txt','r') as stream:
+    lines = stream.readlines()
+
+url_list = []
+for line in lines:
+    if line.startswith('http'):
+        url_list.append(line.split(' ')[0][:-1])
+
+for url in url_list:
+    webbrowser.open_new_tab(url)
+    time.sleep(2)
+
+input('Done..')
