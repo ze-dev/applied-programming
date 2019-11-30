@@ -16,4 +16,4 @@ for url in url_list:
     webbrowser.open_new_tab(url)
     time.sleep(3)
 
-input('Done..')
+input('Done.Press Enter..')
