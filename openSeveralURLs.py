@@ -14,6 +14,6 @@ for line in lines:
 
 for url in url_list:
     webbrowser.open_new_tab(url)
-    time.sleep(3)
+    time.sleep(4)
 
 input('Done.Press Enter..')
