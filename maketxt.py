@@ -7,7 +7,7 @@ def maketxt(filename):
         fullPath = '%s\%s' % (dirPath, filename)
         print('\nДиректория назначения вызова > %s ' % dirPath)
         print('\nФайл  %s.txt  создан...' % filename)
-        time.sleep(2.2)
+        time.sleep(2)
 
 if __name__ == '__main__':
     import sys
@@ -16,4 +16,3 @@ if __name__ == '__main__':
     else:
         parameter = input('Введите имя файла >  ')
     maketxt(parameter)
-    
