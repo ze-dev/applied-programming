@@ -21,5 +21,3 @@ def makeUrl():
 
 if __name__ == '__main__':
     makeUrl()
-    
-    
