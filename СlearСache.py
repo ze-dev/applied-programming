@@ -5,3 +5,4 @@ an='\\\\{}\\c$\\Users\\{}\\AppData\\'.format(t,c)
 pyperclip.copy(an)
 print('Адрес скопирован в буфер: \n'+an)
 time.sleep(2)
+# добавить открытие папок с адресами
