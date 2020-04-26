@@ -3,8 +3,13 @@
 Читает все из одного текстового файла в той же папке.'''
 
 import webbrowser, time
+from tkinter import Tk
+from tkinter.filedialog import askopenfilename
 
-with open('речь и размещение.txt','r') as stream:
+Tk().withdraw()
+filename = askopenfilename()
+
+with open(filename,'r') as stream:
     lines = stream.readlines()
 
 url_list = []
@@ -16,4 +21,5 @@ for url in url_list:
     webbrowser.open_new_tab(url)
     time.sleep(3)
 
-input('Done.Press Enter..')
+print('Done...')
+time.sleep(2)
